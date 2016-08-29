@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link href="css/style.css" type="text/css" rel="stylesheet">
+    <script type="text/javascript" src = "js/clock.js"></script>
+<!-- Bootstrap core CSS -->
+    <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
+	<link rel="shortcut icon" type="image/x-icon" href="files/favicon.ico"/>
+	<link rel="icon" type="image/png" href="files/favicon.png" />
+	<title>Resume</title>
+</head>
+<?php
+  $fName = basename(__FILE__);
+?>
+<body>
+	<?php
+		include("header.php");
+		?>
+
+	<div class = "rm col-xs-12">
+  		<a href="files/resume.pdf" target="_blank"><img src="files/rmcover.png" alt="Cover of resume of Jeseok Lee" width="400"></a>
+		<a href="files/resume.pdf" target="_blank">Click above to download resume (PDF)</a>
+		<br><br><br>
+
+	</div>
+	<?php
+		include("footer.php");
+		?>
+
+</body>
+</html>

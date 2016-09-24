@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link href="css/style.css" type="text/css" rel="stylesheet">
+    <link href="css/works.css" type="text/css" rel="stylesheet">
+    <link href="css/portfolio.css" type="text/css" rel="stylesheet">
+    <script type="text/javascript" src = "js/clock.js"></script>
+    <script type="text/javascript" src = "js/more.js"></script>
+    <script language="JavaScript">
+		function toggletext(cid)
+		{
+		 if ( document.getElementById(cid).style.display == "none" )
+		 {
+		   document.getElementById(cid).style.display = "block";
+		 }
+		 else
+		 {
+		   document.getElementById(cid).style.display = "none";
+		 };
+		}
+	</script>
+    <!-- Favicon -->
+	<link rel="shortcut icon" type="image/x-icon" href="files/favicon.ico"/>
+	<link rel="icon" type="image/png" href="files/favicon.png" />
+
+<!-- Bootstrap core CSS -->
+    <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/jquery.min.js"></script>
+   	<script src="js/bootstrap.min.js"></script>
+
+	<title>Works</title>
+</head>
+<?php
+  $fName = basename(__FILE__);
+?>
+<body>
+	<?php
+		include("header.php");
+	?>
+
+	<div id = "Container" class = "container title">
+		User Research Project with a client: Pilot.ly
+	</div>
+	<div id = "Container" class = "container sub">
+		Course Project<br>
+		Copyright is held by the owner/author(s).<br>
+		UMSI 2014 Winter Semester, SI 622 Need Assessment and Usability Evaluation
+	</div>
+	<div id = "Container" class = "container heading1">
+		Introduction
+	</div>
+	<div id = "Container" class = "container description">
+		SI 622 is a project-based course that students should work with a business client
+		during the whole semester. My team worked with <a href="https://pilot.ly/">Pilot.ly</a>, a
+		start-up company which services video streaming of TV shows. It provides pilot episodes
+		before the TV show goes on air, receiving feedback from viewers and analyzing it for
+		the content provider.
+
+		<br>
+		<img src = "pic/pilotly/main.png"></img>
+		<div class = "caption">
+			Main screen of UM MHPE
+		</div>
+	</div>
+	
+
+	<div id = "Container" class = "container heading1">
+		Interaction Map
+	</div>
+	
+	<div id = "Container" class = "container description">
+		For better understanding of the application, we started with drawing an interaction map.
+		<br><br> 
+		<img src = "pic/pilotly/map.png"></img>
+		<div class = "caption">
+			Interaction map of Pilot.ly. <br>
+			Created by Jeseok Lee. Adobe Illustrator.
+		</div>
+	</div>
+	<br><br><br>
+	<div id = "Container" class = "container heading1">
+		Survey
+	</div>
+	
+	<div id = "Container" class = "container description">
+		In order to help develop their product, our team designed a survey that addressed 
+		their target audience. We sought to identify attitudes and behaviors about online 
+		streaming in order to develop recommendations that can be implemented into Pilot.ly’s 
+		platform.
+
+		<br><br>
+		
+		Our findings thus center on these 3 major themes of feedback. These findings include:
+		<li>Video content is essential to motivating users to rate, comment and/or review on a website</li>
+		<li>Altruism and social engagement motivates users to respond to surveys while rewards do not</li>
+		<li>Our two survey groups respond differently to the product; the existing database responds more 
+		positively to Pilot.ly while those out of the Pilot.ly database have a more neutral approach</li>
+		<br>
+		With these findings, our team has created a series of corresponding recommendations. These recommendations include:
+		<br>
+		<li>Engaging users with existing comments/reviews/ratings around the content in order to perpetuate exchange in feedback</li>
+		<li>Developing a rating system in addition to comments and/or reviews</li>
+		<li>Appealing primarily to the social and altruistic nature of the user while approaching rewards in a secondary manner</li>
+		<li>Encouraging current Pilot.ly users to extend to more general audiences while also creating options that appeal to both parties</li>
+		<br>
+		You can refer to <a href="https://drive.google.com/file/d/0BwG6zukfAAGAYXZaNGM4TzEzdG8/view?usp=sharing">here</a> to see the entire survey report.
+		<br><br>
+	</div>
+	<div id = "Container" class = "container heading1">
+		Interview
+	</div>
+	<div id = "Container" class = "container description">
+		We gathered several insights into the motivations and values of Pilot.ly’s future users. 
+		Our key findings include that most interviewees do not appreciate interruptions during 
+		their viewing experience and that accessibility, convenience and flexibility are important 
+		factors in watching a TV series. Additionally, most interviewees expressed willingness to 
+		provide quick feedback to surveys and stressed the importance of understanding the purpose
+		/intention of a survey before they fill it out.
+
+		<br><br>
+		<a href="pic/pilotly/interview.html">Click here to open interview questions.</a><br>
+		<a href="https://drive.google.com/file/d/0B_cnIm25DEMUT2VGYVNrbndUMkE/view?usp=sharing">You can find the full report here.</a>
+		<br><br><br> 
+	</div>
+
+	<div id = "Container" class = "container heading1">
+		Persona and Scenario
+	</div>
+	<div id = "Container" class = "container description">
+		<img src = "pic/pilotly/personas-01.png" width="300px" style = "display:inline; margin-left:5%"></img>
+		<img src = "pic/pilotly/personas-02.png" width="300px" style = "display:inline; margin-left:5%"></img>
+		<img src = "pic/pilotly/personas-03.png" width="300px" style = "display:inline; margin-left:5%"></img>
+		<br>	
+		<img src = "pic/pilotly/scenario-01.png" width="300px" style = "display:inline; margin-left:5%"></img>
+		<img src = "pic/pilotly/scenario-02.png" width="300px" style = "display:inline; margin-left:5%"></img>
+		<img src = "pic/pilotly/scenario-03.png" width="300px" style = "display:inline; margin-left:5%"></img>
+		<br>
+		<div class = "caption">
+			Personas and Scenarios of Pilot.ly. All created by Jeseok Lee. Adobe Illustrator.
+		</div>
+		<br>
+	</div>
+
+	<div id = "Container" class = "container heading1">
+		Comparative Analysis
+	</div>
+
+	<div id = "Container" class = "container description">
+		We compared Pilot.ly with several competitors that offer online streaming services. A total
+		 of 6 competitors (Amazon Prime Instant Video Originals, Hulu Plus, Netflix, HBO GO, CBS, 
+		 and Vudu) compiled between Pilot.ly and our team were chosen and evaluated under several 
+		 different categories and key dimensions. Together, our team analyzed and discussed our data 
+		 and research to create a matrix that compares Pilot.ly to other competitors. 
+		<br><br>
+		 We created 5 
+		 recommendations that Pilot.ly can take into consideration to further improve their website.
+		  These recommendations include: 1) featuring a search bar in order to ease a user’s browsing
+		   experience, 2) incorporate a rating system that allows user to leave quick, easy feedback, 
+		   3) replace the current DISQUS widget with Facebook to enhance the user commenting process,
+		    4) incorporate a sharing function in the video player or have it accessible during video 
+		    play, and 5) include a caption feature in the video player to include audiences who require
+		     subtitles or have a disability.
+		<img src = "pic/pilotly/comparative.png" max-width="1000px"></img>
+		<div class = "caption">
+			Visualization of Comparative Analysis of Pilot.ly. All created by Jeseok Lee. MS Excel.
+		</div>
+		<br><br> 
+	</div>
+	
+	<div id = "Container" class = "container heading1">
+		Usability Test
+	</div>
+	<div id = "Container" class = "container description">
+		5 testers and 1 pilot tester were recruited from the Ann Arbor area to complete 7 tasks 
+		that our team designed. We sought to understand how users perceive the site and determine 
+		any sort of issues that they encountered.
+		<br><br>
+		<h4> Sample and Recruit</h4>
+
+		The primary target user group of Pilot.ly consists of young professionals and college 
+		students. These users should be active TV watchers, be tech-savvy, and consider themselves 
+		social media pioneers. However, this website is designed for general users who watch TV 
+		regardless of age, tech adoption, and social media involvement. Considering our recruit 
+		flexibility, we used the following criterion to select our subjects:
+		<br><br>
+		<li>Balanced gender in sample group</li>
+		<li>Aged 18-30</li>
+		<li>Students and young professionals</li>
+		<li>Watches more than 1 hour of TV per week</li>
+		<li>Has streaming platform experience</li>
+		<li>No experience using Pilot.ly</li>
+		<br><br>
+
+		<h4>Test design</h4>
+		After acknowledging Pilot.ly’s key features with our client, we designed a protocol draft, 7 tasks, several follow up questions, and a pre-test and post-test questionnaire within our team. All tasks and follow up questions were designed to examine essential features in-site (see Appendix Protocol and Questionnaire). These essential features include:
+		<br><br>
+
+		<li>User on-boarding process (sign-up, sign-in, and tutorial)</li>
+		<li>Browsing and finding pilot shows</li>
+		<li>Watching shows</li>
+		<li>Commenting</li>
+		<li>Sharing</li>
+		<li>Changing password in Profile page</li>
+		<li>My Library page</li>
+		<br><br>
+
+		<h4>Analysis process</h4>	 
+		After completing 5 usability tests, we reviewed and organized all notes for each user. We 
+		discussed and combined our findings for all 7 tasks together, covering how each problem 
+		occurred, how many subjects experienced that same problem, and then ranked that problem’s 
+		severity. Issues ranked level 4 severity were listed in the Findings section of this report 
+		while issues with severity levels 0-3 are located in the Appendix. We also acknowledged 
+		issues pertinent to Pilot.ly but not purely usability issues in the Discussion section. The 
+		same Nielsen severity scale used in our Heuristic Evaluation report was used in this 
+		Usability report.
+		<img src = "pic/pilotly/ut.png" max-width="1000px"></img>
+		<div class = "caption">
+			Result of User Test. All created by Jeseok Lee. Google Spreadsheet.
+		</div>
+		<br><br>
+		The most severe issues include:
+ 
+		<li>Users cannot find a search function and indicate its necessity to find the programs they want</li>
+		<li>Users perceive “Watch Now” and “Add to my Library” as 2 separate concepts and do not understand why they are located in the same button</li>
+		<li>Users have difficulty maneuvering through the website</li>
+		<li>Users have difficulty controlling the DISQUS commenting widget</li>
+		<li>Users who utilize Facebook login cannot comment successfully on TV programs</li>
+		<li>Users cannot change their password successfully in their profiles</li>
+
+		<br><br> 
+	</div>
+	<div id = "Container" class = "container heading1">
+		Conclusion
+	</div>
+	<div id = "Container" class = "container description">
+		This usability test report concludes our research for the Pilot.ly platform. We have 
+		completed an interaction map, interviews &amp personas, a survey evaluation, a competitive 
+		analysis, a heuristic evaluation, and now usability testing. The data that we analyzed in 
+		each report can be used to help enhance Pilot.ly’s streaming service before their commercial
+		 launch. 
+		<br><br>
+		We created a video to effectively describe problems and potential oppportunities of Pilot.ly
+		as our final result.<br><br>
+		<div align="center">
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/lHEuYpqpHoc" frameborder="0" allowfullscreen></iframe>
+		</div>
+	</div>
+
+	<?php
+		include("footer.php");
+	?>
+
+</body>
+</html><br>

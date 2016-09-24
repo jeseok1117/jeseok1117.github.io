@@ -12,7 +12,7 @@
 	<link rel="icon" type="image/png" href="files/favicon.png" />
 
 <!-- Bootstrap core CSS -->
-    <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="js/jquery.min.js"></script>
    	<script src="js/bootstrap.min.js"></script>
@@ -23,9 +23,25 @@
   $fName = basename(__FILE__);
 ?>
 <body>
-	<?php
-		include("header.php");
-	?>
+	<div class = "container">
+		<div class = "row titlebar">
+			<a href="index.html"><div class="col-md-12 col-sm-12 col-xs-12 title_bar"></div></a>	
+		</div>
+	</div>
+	<div class = "container">
+		<nav>
+			<div class = "row">
+				<div><a href ="index.html" class = "col-sm-4 col-xs-12 pg_button">		
+				Works</a></div>
+
+				<div><a href ="resume.html" class = "col-sm-4 col-xs-12 pg_button">				
+				Resume</a></div>
+
+				<div><a href ="contact.html" class = "col-sm-4 col-xs-12 pg_button">				
+				Contact</a></div>
+     		</div>
+   		</nav>
+	</div><br><br>
 
 	<div id = "Container" class = "container title">
 		Contextual Inquiry Project with client: University of Michigan Master of Health Professions Educaiton Department
@@ -178,9 +194,11 @@
 		<br><br>
 	</div>
 	
-	<?php
-		include("footer.php");
-	?>
-
+	<div class = "footer">
+		<p>Contact me</p>
+		<a href="https://www.facebook.com/JeseokJasonLee"><img src = "files/fb.png" alt="Facebook link"></a>
+		<a href="https://twitter.com/TRNQ"><img src = "files/twt.jpeg" alt="Twitter link"></a>	
+		<a href="mailto:jesl@uci.edu"><img src = "files/email.png" alt="e-mail link"></a>	
+	</div>
 </body>
 </html><br>

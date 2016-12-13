@@ -87,18 +87,18 @@ header .titlebar a{
 	-moz-border-radius: 150px;
 }
 
-.footer{
+footer{
 	padding-top: 5%;
 	padding-bottom: 3%;
 	text-align: center;
 	font-family: sans-serif;
 }
 
-.footer p{
+footer p{
 	font-size: 1em;
 }
 
-.footer img{
+footer img{
 	width: 30px;
 	height: 30px;
 	/*margin-top:1%;*/

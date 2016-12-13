@@ -11,7 +11,7 @@
 	<link rel="icon" type="image/png" href="files/favicon.png" />
 
 <!-- Bootstrap core CSS -->
-    <link href="https://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="js/jquery.min.js"></script>
    	<script src="js/bootstrap.min.js"></script>
@@ -22,25 +22,9 @@
   $fName = basename(__FILE__);
 ?>
 <body>
-	<div class = "container">
-		<div class = "row titlebar">
-			<a href="index.html"><div class="col-md-12 col-sm-12 col-xs-12 title_bar"></div></a>	
-		</div>
-	</div>
-	<div class = "container">
-		<nav>
-			<div class = "row">
-				<div><a href ="index.html" class = "col-sm-4 col-xs-12 pg_button">		
-				Works</a></div>
-
-				<div><a href ="resume.html" class = "col-sm-4 col-xs-12 pg_button">				
-				Resume</a></div>
-
-				<div><a href ="contact.html" class = "col-sm-4 col-xs-12 pg_button">				
-				Contact</a></div>
-     		</div>
-   		</nav>
-	</div><br><br>
+	<?php
+		include("header.php");
+	?>
 
 	<div id = "Container" class = "container title">
 		Journey On: Recovery assistant device for temporarily injured people
@@ -165,12 +149,73 @@
 		<br><br> 
 	</div>
 
-	<div class = "footer">
-		<p>Contact me</p>
-		<a href="https://www.facebook.com/JeseokJasonLee"><img src = "files/fb.png" alt="Facebook link"></a>
-		<a href="https://twitter.com/TRNQ"><img src = "files/twt.jpeg" alt="Twitter link"></a>	
-		<a href="mailto:jesl@uci.edu"><img src = "files/email.png" alt="e-mail link"></a>	
+	<div id = "Container" class = "container heading1">
+		Experience prototype and results
 	</div>
+
+	<div id = "Container" class = "container description">
+		<img src = "pic/cane/1_5.png"></img>
+		<div class = "caption">
+			Journey of taking a bus with Talking Cane<br>
+			Created by Jeseok Lee. Adobe Illustrator.
+		</div>
+		First, users input their destination on the smartphone application. The input data 
+		will be delivered through voice recognition technology since it is difficult for 
+		visually impaired people to utilize a touch screen to type words into their phone. 
+
+		Then, by using map data, the application suggests a recommended route including both 
+		pedestrian paths and transportation transits. While walking on the pedestrian walkaways, 
+		the user can use his or her own white cane in two ways. Firstly, as usual, users can 
+		rely on his or her cane to avoid immediate obstacles in the way, for which application 
+		guidance cannot be provide forewarning. The user follows braille roadblocks with his or 
+		her white cane. 
+		<br><br> 
+
+		As it follows the braille roadblocks, the cane will operate the second 
+		function; hitting braille roadblocks with this newly designed cane, an RFID reader at the 
+		tip of the cane reads location information from RFID chips in roadblocks. Then, the white 
+		cane sends location information to a smartphone. 
+		<br><br> 
+
+		When a user has to be informed of the exact direction or has to make a turn at the corner, 
+		vibration motors in the handgrip tell users which direction to go, and how many degrees 
+		to turn. Along with vibration, the user’s smartphone tells a few types of necessary 
+		information to the user with voice: landmarks, the ends of each block, crosswalks, and 
+		corners. Due to the process, users can find where they are and thus do not feel astray. 
+		<br><br> 
+
+		At the bus stop, the user waits for the right bus. When the user arrives at the bus stop 
+		and tags the RFID chip with the white cane, a notification is sent to the bus driver. 
+		<br><br> 
+
+		When the bus arrives, it will make an audio signal from the front door so that the 
+		blinded person can recognize distance and direction to the door.
+	</div>
+	<br><br> 
+
+	<div id = "Container" class = "container heading1">
+		Conclusion
+	</div>
+
+	<div id = "Container" class = "container description">
+		The unique contribution of TalkingCane is to combine shared public data with a white cane 
+		to improve traveling experience of the visually impaired without introducing additional 
+		gadgets. Our objective is to help visually impaired people take buses easily by increasing 
+		accessibility. We conducted a literature review to find visually impaired people’s 
+		difficulties in taking buses. 
+		<br><br> 
+		During the review, we discovered the need for communication 
+		technology between visually impaired users and the world for a better traveling experience. 
+		To establish the communication, a white cane and braille roadblocks were chosen as new 
+		interactive devices. Many of our target user groups already use them in their daily lives. 
+		The white cane was a great device to apply haptic feedback for terrain obstacles and become 
+		an RFID reader as communication equipment.
+	</div>
+
+
+	<?php
+		include("footer.php");
+	?>
 
 </body>
 </html>

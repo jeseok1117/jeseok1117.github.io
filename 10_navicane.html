@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link href="css/style.css" type="text/css" rel="stylesheet">
+    <link href="css/works.css" type="text/css" rel="stylesheet">
+    <link href="css/works.css" type="text/css" rel="stylesheet">
+    <link href="css/portfolio.css" type="text/css" rel="stylesheet">
+
+    <script type="text/javascript" src = "js/clock.js"></script>
+    <!-- Favicon -->
+	<link rel="shortcut icon" type="image/x-icon" href="files/favicon.ico"/>
+	<link rel="icon" type="image/png" href="files/favicon.png" />
+
+<!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/jquery.min.js"></script>
+   	<script src="js/bootstrap.min.js"></script>
+<!-- mixitup -->
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/jquery.mixitup/latest/jquery.mixitup.min.js"></script>
+	<script src="js/works.js"></script>
+<!-- fancybox -->
+	<!-- Add mousewheel plugin (this is optional) -->
+	<script type="text/javascript" src="/fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+
+	<!-- Add fancyBox -->
+	<link rel="stylesheet" href="fancybox/source/jquery.fancybox.css" type="text/css" media="screen" />
+	<script type="text/javascript" src="fancybox/source/jquery.fancybox.pack.js"></script>
+	<!-- Optionally add helpers - button, thumbnail and/or media -->
+	<link rel="stylesheet" href="/fancybox/source/helpers/jquery.fancybox-buttons.css" type="text/css" media="screen" />
+	<script type="text/javascript" src="/fancybox/source/helpers/jquery.fancybox-buttons.js"></script>
+	<script type="text/javascript" src="/fancybox/source/helpers/jquery.fancybox-media.js"></script>
+
+	<link rel="stylesheet" href="/fancybox/source/helpers/jquery.fancybox-thumbs.css" type="text/css" media="screen" />
+	<script type="text/javascript" src="/fancybox/source/helpers/jquery.fancybox-thumbs.js"></script>
+
+	<title>Works</title>
+</head>
+<?php
+  $fName = basename(__FILE__);
+?>
+<body>
+	<div class = "container">
+		<div class = "row titlebar">
+			<a href="index.html"><div class="col-md-12 col-sm-12 col-xs-12 title_bar"></div></a>	
+		</div>
+	</div>
+	<div class = "container">
+		<nav>
+			<div class = "row">
+				<div><a href ="index.html" class = "col-sm-4 col-xs-12 pg_button">		
+				Works</a></div>
+
+				<div><a href ="resume.html" class = "col-sm-4 col-xs-12 pg_button">				
+				Resume</a></div>
+
+				<div><a href ="about.html" class = "col-sm-4 col-xs-12 pg_button">				
+				About Jeseok</a></div>
+     		</div>
+   		</nav>
+	</div>	
+	<?php
+		include("header.php");
+	?>
+
+	<div id = "Container" class = "container title">
+		NaviCane - Prototyping TalkingCane 
+	</div>
+	<div id = "Container" class = "container sub">
+		Course Project of INF 248 Intro to Ubiqutous Computing<br>
+		Copyright is held by the owner/author(s).<br>
+	</div>
+	<div id = "Container" class = "container heading1">
+		Prototyping TalkingCane
+	</div>
+	<div id = "Container" class = "container description">
+		For the course project of Intro to Ubicomp, I and my team designed and developed the prototype of TalkingCane,  revisiting with its new name, NaviCane!
+		<br><br>
+	</div>
+	
+	<div id = "Container" class = "container description">
+		<img src = "pic/navi/ke.jpg" width="300"></img>
+	</div>
+
+	<div class = "caption">
+		Photo taken by Jeseok Lee.<br>
+		Teammate Ke Jing as a model.
+	</div>
+	
+	<div id = "Container" class = "container heading1">
+		Architecture and Logic Flowchart
+	</div>
+	
+	<div id = "Container" class = "container description">
+		<img src = "pic/navi/arch.png" width="500"></img>
+		<div class = "caption">
+			Architecture of the design<br>
+		</div>
+		<img src = "pic/navi/logic.png" width="500"></img>
+		<div class = "caption">
+			Logic flowchart<br>
+			Diagrams drawn by colleagues(Mayara Figueiredo, Kelly Kwan and Ke Jing).<br>
+		</div>
+	</div>
+
+	<div id = "Container" class = "container description">
+	Architechture shows a scheme of the three main components of the NaviCane system: the RFID tags mapping the paths, the navigation device in the user white cane, and the smartphone application with which the user interacts. The data that flows through the two first components is basically the RFID tag ID. The communication is one way only: the tag ID is sent from the RFID tag to the smartphone app and the system does not send any data back to the RFID tags.<br>
+	The user interacts with the smartphone application through text input, while the application responds through audio feedback.<br><br>
+	Logic flowchart shows the user navigation process. Starting at the top left in the flowchart, there is a set of setups. The user first pairs the smartphone with the NaviCane through Bluetooth. Then in the app, the user enters the building, which in our demo is DBH 1300. We used a room as the building in our prototype for convenience. After that, the user selects a destination, which in our demo is the front door of classroom 1300, which we labeled, "North Entrance." The middle and right side in the flowchart shows the main navigation loop. First the user taps a RFID tag, which in our demo is located in a corner in the back of classroom 1300. If this tag is valid then the program will check whether it is the tag at the destination or not. If it is not the destination then the program will give audio navigation instructions to the user. The user will, for example, turn right and walk 20 feet, to search for another tag. Through the step-by-step navigation with the RFID tag landmarks, the user can finally reach the destination.<br><br>
+	Note that this flowchart is describing how the current prototype works. In the future, a website will be added to host the map and navigation data. Also the Bluetooth pairing may be automatic once the application is opened. The “Select Building” step could be aided by suggestions from GPS localization. the user input could be voice input instead of typing.<br>
+	</div>
+<br><br><br><br>
+
+	<div id = "Container" class = "container heading1">
+		Parts
+	</div>
+	
+	<div id = "Container" class = "container description">
+		<img src = "pic/navi/tags.jpg" width="500"></img>
+		<img src = "pic/navi/arduino.jpg" width="500"></img>
+		<img src = "pic/navi/side.jpg" width="500"></img>
+		<div class = "caption">
+			Photo taken by Jeseok Lee.<br>
+			RFID tags in 13.56MHz frequency and RFID reader module built on Arduino.
+			(RFID shield and Bluetooth(BLE) shield stacked on Arduino)
+		</div>
+	</div>
+	<br>
+	<div id = "Container" class = "container description">
+		RFID shield and BLE shield were stacked on the Arduino board. RFID Tags contain their own ID, which can be read with the RFID reader module. And RFID reader sends the ID information to the user's smartphone using Bluetooth communication. Instead of connecting pins, RFID shield and BLE shield were used to make compact structure of the design.<br>
+	</div>
+	<div id = "Container" class = "container description">
+		<img src = "pic/navi/cane.jpg" width="500"></img>
+		<img src = "pic/navi/cane2.jpg" width="500"></img>		
+	</div>
+
+	<div class = "caption">
+		Photo taken by Jeseok Lee.<br>
+	</div>
+	
+	<div id = "Container" class = "container description">
+		Attached the RFID reader module to a guidance cane. 9V Battery pack is planted inside the gray box.<br><br>
+	</div>
+	
+	<div id = "Container" class = "container heading1">
+		Demo Video
+	</div>
+	<div style="text-align:center">
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/ApB7h6paipo" frameborder="0" allowfullscreen></iframe>
+	</div>
+	<br><br>
+	<div id = "Container" class = "container heading1">
+		User Manual
+	</div>
+	<div id = "Container" class = "container description">
+		<img src = "pic/navi/manual.001.png"></img>
+		<img src = "pic/navi/manual.002.png"></img>
+		<div class = "caption">
+			Images created by Jeseok Lee.<br><br><br><br>
+		</div>
+	</div>
+
+</body>
+</html>

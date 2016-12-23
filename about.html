@@ -36,7 +36,7 @@
 	<link rel="stylesheet" href="/fancybox/source/helpers/jquery.fancybox-thumbs.css" type="text/css" media="screen" />
 	<script type="text/javascript" src="/fancybox/source/helpers/jquery.fancybox-thumbs.js"></script>
 
-	<title>Contact</title>
+	<title>About</title>
 </head>
 <?php
   $fName = basename(__FILE__);
@@ -56,14 +56,28 @@
 				<div><a href ="resume.html" class = "col-sm-4 col-xs-12 pg_button">				
 				Resume</a></div>
 
-				<div><a href ="contact.html" class = "col-sm-4 col-xs-12 pg_button">				
-				Contact</a></div>
+				<div><a href ="about.html" class = "col-sm-4 col-xs-12 pg_button">				
+				About Jeseok</a></div>
      		</div>
    		</nav>
 	</div><br><br>
 	<div class = "container">
 		<div class = "contacts col-sm-6 col-xs-12">
+   			<h1>About Jeseok</h1><br>
+   			<p>
+				I was born and grew up in Seoul, which is one of the biggest and most dynamic cities in the world. Living in Seoul, I was influenced by diverse faces and spontaneous sub-cultures of the city, and started to pay attention to the aesthetics of daily life. <br><br>
+				I majored in Economics at Seoul National University. Although I learned how to see the world from an analytical viewpoint, my interest was closer to human ethnography than numbers and mathematics. I decided to study another major in Information and Cultural Technology to see how individual people interact with digital technology. In the ICT department, Human-Computer Interaction and the creation and management of digital content were the main focus of my study. To acquire more technical skills in creating content, I minored in Visual Design in the department of Fine Art. Not only did I learn technical skills like composition and typography, but I also learned deeply about the history and social meaning of design. This is how I came to have such a diverse educational background.<br><br>
+				From fall 2014 to winter 2016, I earned my M.S. in Information degree at School of Information at the University of Michigan, specializing in Human-Computer Interaction. I could learn technical skills in various fields of information science, and started my academic career as a researcher. I worked as a graduate research assistant for Professor Kevyn Collins-Thompson and Professor Sarita Schoenebeck.<br><br>
+				I also continued my own individual research on assistive technology for the people with impairment and aged people. In summer 2015, I published two of my papers on designing an assistive technology solution for visually impaired people’s navigation and aged people’s online communication at MobileHCI. <br><br>
+				From fall 2016, I started my Ph.D. program in Informatics at the University of California, Irvine. My main research interest is assistive technology and research methods to investigate a group of people with special needs. Currently, I have been working on an assistive technology project to develop a solution for visually impaired people’s pedestrian navigation and a new type of feedback method. My interest also lies on the interaction and communication between gamers in e-sports, especially on social aspects like sexual discrimination among gamers.
+				<br><br><br>
+			</p>
+		</div>
+		<div class = "emailjeseok photo col-sm-6 col-xs-12">
    			<h1>Contacts</h1>
+   			<img src = 'files/me.jpg' alt="picture of Jeseok Lee">
+	   			<br>
+	   			<br>   			
    			<p>
 	   			Je Seok Lee
 	   			<br>
@@ -73,46 +87,6 @@
 				<a href="mailto:jeseok@umich.edu">jesl@uci.edu</a><br>
 				<a href="mailto:jeseok@umich.edu">jeseok@umich.edu</a>
 			</p>
-		</div>
-		<div class = "emailjeseok col-sm-6 col-xs-12">
-			<form method="POST" action="process.php" onsubmit = "return validate(this)">	
-			<fieldset>					
-				<h1>Drop me a message</h1>
-				<div class = emailform>
-					<div class="username">
-						<label class = "col-xs-12" for="username">Name / Organization</label><br>
-						<input class = "form col-xs-12" type="text" id="username" name="username" required>
-						<div class = "error"></div>
-					</div>
-					<br>
-					<div class="email_address">
-						<label class = "col-xs-12" for="email_address">Your Email address</label><br>
-						<input class = "form col-xs-12" type="email" id="email_address" name="email_address" placeholder="youremail@email.com" required >
-						<div class = "error"></div>
-					</div>
-					<br>
-					<div class="email_subject">
-						<label class = "col-xs-12" for="email_subject">Subject</label><br>
-						<input class = "form col-xs-12" type="text" id="email_subject" name="email_subject" required>
-						<div class = "error"></div>
-					</div>
-					<br>
-					<div class="message">
-						<label class = "col-xs-12" for="message">Message</label><br>
-						<textarea class = "form col-xs-12" id="message" name="message" rows="5" cols="40" required></textarea>
-						<div class = "error"></div>
-					</div>
-					<div class = "form submit_button col-xs-12">
-	  					<input class="submit_button" type="submit" value= "Send E-mail" onclick="validate(form)"/>
-					</div>
-
-				</div>
-				<br>					
-				<br>
-				
-
-			</fieldset>
-			</form>
 		</div>
 	</div>
 

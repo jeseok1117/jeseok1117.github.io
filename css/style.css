@@ -157,14 +157,14 @@ footer img{
 }
 
 .photo img{
-	width:60%%;
-	height:60%;
-	border-radius: 150px;
+	width:50%;
+	height:50%;
+	border-radius: 50%;
 	/*margin-bottom:15px;*/
-	-webkit-border-radius: 150px;
-	-moz-border-radius: 150px;
-	margin-right:auto;
-	margin-left:5%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	display: block;
+	margin:auto;
 	margin-top:20px;
 	margin-bottom: 20px;
 	display:relative;
@@ -205,7 +205,7 @@ footer img{
 }
 .rm img{
 	width:400px;
-	border:3px double black;
+	border:1px solid #aaaaaa;
 	display: block;
 	margin-top:5%;
 	margin-bottom:1%;
@@ -224,13 +224,13 @@ footer img{
 }
 
 .contacts{
-	text-align: center;
+	text-align: left;
 	margin: auto;
 
 }
 
 .contacts p{
-	font-size: 1em;
+	font-size: 1.2em;
 	font-weight:200;
 	margin: auto;
 }
@@ -240,6 +240,13 @@ footer img{
 	font-weight:100;
 	text-align: center;	
 	letter-spacing: 1px;
+}
+
+.emailjeseok p{
+	text-align: center;
+	font-size: 1.5em;
+	font-weight:200;
+	margin: auto;
 }
 
 .emailjeseok label{
